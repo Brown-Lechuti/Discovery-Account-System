@@ -1,5 +1,6 @@
-za\ac\nwu\web\sb\exception\ex.class
 za\ac\nwu\web\sb\controller\Controller.class
+za\ac\nwu\web\sb\Config\WebConfig.class
+za\ac\nwu\web\sb\exception\ex.class
+za\ac\nwu\web\sb\service\Greeting.class
 za\ac\nwu\web\sb\Config\SwaggerConfig.class
 za\ac\nwu\web\sb\RestServiceApplication.class
-za\ac\nwu\web\sb\Config\WebConfig.class
