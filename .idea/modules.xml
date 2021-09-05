@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/AccountSystemRepo/AccountSystemRepo.iml" filepath="$PROJECT_DIR$/AccountSystemRepo/AccountSystemRepo.iml" />
       <module fileurl="file://$PROJECT_DIR$/AccountSystemSpringBoot/AccountSystemSpringBoot.iml" filepath="$PROJECT_DIR$/AccountSystemSpringBoot/AccountSystemSpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/AccountSystemTranslator/AccountSystemTranslator.iml" filepath="$PROJECT_DIR$/AccountSystemTranslator/AccountSystemTranslator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AccountSystemWeb/AccountSystemWeb.iml" filepath="$PROJECT_DIR$/AccountSystemWeb/AccountSystemWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/Discovery-Account-System.iml" filepath="$PROJECT_DIR$/Discovery-Account-System.iml" />
     </modules>
   </component>

@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="AccountSystemSpringBoot-1.0-SNAPSHOT.war">
+    <root id="archive" name="AccountSystemSpringBoot-0.0.1-SNAPSHOT.war">
       <element id="artifact" artifact-name="AccountSystemSpringBoot:war exploded" />
     </root>
   </artifact>
