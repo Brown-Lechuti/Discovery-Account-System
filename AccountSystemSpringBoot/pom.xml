@@ -9,6 +9,8 @@
         <artifactId>Discovery-Account-System</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+    <name>Discovery Account System</name>
+    <description>Vitality Rewards Account Management</description>
 
     <artifactId>AccountSystemSpringBoot</artifactId>
     <packaging>war</packaging>
