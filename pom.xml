@@ -18,17 +18,41 @@
         <maven.compiler.source>16</maven.compiler.source>
           <maven.compiler.target>16</maven.compiler.target>
 
-          <!--<springfox-swagger.version>2.9.2</springfox-swagger.version>
-          <swagger.version>1.5.20</swagger.version>-->
+          <io.springfox-swagger.version>3.0.0</io.springfox-swagger.version>
     </properties>
-
     <modules>
         <module>AccountSystemDomain</module>
         <module>AccountSystemLogic</module>
         <module>AccountSystemRepo</module>
         <module>AccountSystemTranslator</module>
-        <module>AccountSystemWeb</module>
         <module>AccountSystemSpringBoot</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${io.springfox-swagger.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${io.springfox-swagger.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${io.springfox-swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

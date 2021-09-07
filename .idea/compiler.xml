@@ -10,6 +10,7 @@
         <module name="AccountSystemDomain" />
         <module name="AccountSystemTranslator" />
         <module name="AccountSystemLogic" />
+        <module name="AccountSystemWeb" />
         <module name="AccountSystemRepo" />
         <module name="AccountSystemSpringBoot" />
       </profile>
@@ -20,7 +21,7 @@
       <module name="AccountSystemRepo" target="16" />
       <module name="AccountSystemSpringBoot" target="16" />
       <module name="AccountSystemTranslator" target="16" />
-      <module name="AccountSystemWeb" target="16.0.2" />
+      <module name="AccountSystemWeb" target="16" />
       <module name="Discovery-Account-System" target="16" />
     </bytecodeTargetLevel>
   </component>
