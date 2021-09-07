@@ -1,4 +1,4 @@
-package za.ac.nwu.ac.web.sb.controller;
+package za.ac.nwu.ac.web.sb.service;
 
 public class Greeting
 {
