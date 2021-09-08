@@ -20,5 +20,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="AccountSystemDomain" />
+    <orderEntry type="module" module-name="AccountSystemLogic" />
   </component>
 </module>

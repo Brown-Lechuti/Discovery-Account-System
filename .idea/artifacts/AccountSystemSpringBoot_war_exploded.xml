@@ -76,6 +76,21 @@
           <element id="library" level="project" name="Maven: io.springfox:springfox-data-rest:3.0.0" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-bean-validators:3.0.0" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-swagger-ui:3.0.0" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jdbc:2.5.4" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.5.4" />
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:4.0.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jdbc:2.2.4" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-relational:2.2.4" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.5.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.9" />
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ojdbc8:19.6.0.0" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:oraclepki:21.1.0.0" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:osdt_cert:21.1.0.0" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:osdt_core:21.1.0.0" />
+          <element id="library" level="project" name="Maven: com.oracle.database.ha:simplefan:21.1.0.0" />
+          <element id="library" level="project" name="Maven: com.oracle.database.ha:ons:21.1.0.0" />
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ucp:19.6.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
