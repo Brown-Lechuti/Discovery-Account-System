@@ -9,8 +9,6 @@ import za.ac.nwu.ac.repo.dto.Member_Repo;
 @SpringBootApplication
 public class RestServiceApplication extends SpringBootServletInitializer
 {
-   /* @Autowired
-    Member_Repo*/
     public static void main(String[] args)
     {
         SpringApplication.run(RestServiceApplication.class, args);
