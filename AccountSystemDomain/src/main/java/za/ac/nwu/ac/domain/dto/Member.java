@@ -79,15 +79,5 @@ public class Member
         this.currency = currency;
     }
 
-    @Override
-    public String toString() {
-        return "Member{" +
-                "id=" + id +
-                ", first_name='" + first_name + '\'' +
-                ", last_name='" + last_name + '\'' +
-                ", activation_date='" + activation_date + '\'' +
-                ", plays=" + plays +
-                ", currency=" + currency +
-                '}';
-    }
+
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DebitAccController
+public class ViewBalance
 {
     @RequestMapping(value = "/hello")
     public String Hello() {
