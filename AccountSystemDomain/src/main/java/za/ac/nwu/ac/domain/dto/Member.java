@@ -16,19 +16,20 @@ public class Member
     private String first_name;
     private String last_name;
     private String activation_date;
-    private int plays;
-    private  int currency;
+    private  int currency_available;
+    private int plays_available;
+
 
     //default constructor
     public Member() {}
     
     //parametized constructor
-    public Member(String first_name, String last_name, String activation_date, int currency, int plays) {
+    public Member(String first_name, String last_name, String activation_date, int currency_available, int plays_availble) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.activation_date = activation_date;
-        this.plays = plays;
-        this.currency = currency;
+        this.currency_available = currency_available;
+        this.plays_available = plays_availble;
     }
 
     public long getId() {
@@ -64,19 +65,17 @@ public class Member
     }
 
     public int getPlays() {
-        return plays;
+        return plays_available;
     }
 
-    public void setPlays(int plays) {
-        this.plays = plays;
-    }
+    public void setPlays(int plays_available) {this.plays_available = plays_available;}
 
     public int getCurrency() {
-        return currency;
+        return currency_available;
     }
 
-    public void setCurrency(int currency) {
-        this.currency = currency;
+    public void setCurrency(int currency_available) {
+        this.currency_available = currency_available;
     }
 
 

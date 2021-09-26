@@ -14,5 +14,10 @@
       "name": "swagger.application.version",
       "type": "java.lang.String",
       "description": "Description for swagger.application.version."
+    },
+    {
+      "name": "jdbc",
+      "type": "java.lang.String",
+      "description": "Description for jdbc."
     }
   ] }

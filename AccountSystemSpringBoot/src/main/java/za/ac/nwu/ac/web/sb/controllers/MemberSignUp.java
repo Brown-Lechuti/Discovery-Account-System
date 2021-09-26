@@ -8,9 +8,7 @@ import java.util.HashMap;
 
 import java.util.List;
 import java.util.Map;
-
 import javax.validation.Valid;
-
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -44,14 +42,14 @@ public class MemberSignUp
     }
 
     @GetMapping("/MEMBER_/{id}")
-    public ResponseEntity < Member > getEmployeeById(@PathVariable(value = "id") Long MEMBER_ID) throws ResourceNotFoundException
+    public ResponseEntity < Member > getMemberById(@PathVariable(value = "id") Long MEMBER_ID) throws ResourceNotFoundException
     {
         Member member = repo.findById(MEMBER_ID).orElseThrow(() -> new ResourceNotFoundException("Member of this ID was not found:: " + MEMBER_ID));
         return ResponseEntity.ok().body(member);
     }
 
     @PostMapping("/MEMBER_")
-    public Member createEmployee(@Valid @RequestBody Member member)
+    public Member createMember(@Valid @RequestBody Member member)
     {
         return repo.save(member);
     }
@@ -71,7 +69,7 @@ public class MemberSignUp
     }
 
     @DeleteMapping("/MEMBER_/{id}")
-    public Map < String, Boolean > deleteEmployee(@PathVariable(value = "id") Long MEMBER_ID) throws ResourceNotFoundException
+    public Map < String, Boolean > deleteMember(@PathVariable(value = "id") Long MEMBER_ID) throws ResourceNotFoundException
     {
         Member member = repo.findById(MEMBER_ID).orElseThrow(() -> new ResourceNotFoundException("Member not found for this id :: " + MEMBER_ID));
         repo.delete(member);
