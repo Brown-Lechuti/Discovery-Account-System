@@ -11,32 +11,38 @@ public class Member
     @Id
     @Column(name = "MEMBER_ID")
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
 
+    @Column(name="first_name")
     private String first_name;
+    @Column(name="last_name")
     private String last_name;
-    private String activation_date;
-    private  int currency_available;
-    private int plays_available;
+    @Column(name="activation_date")
+    private java.sql.Date activation_date;
+    @Column(name="currency_available")
+    private Integer currency_available = 0;
+    @Column(name="plays_available")
+    private Integer plays_available = 0;
 
 
     //default constructor
-    public Member() {}
+    public Member() { super();}
     
     //parametized constructor
-    public Member(String first_name, String last_name, String activation_date, int currency_available, int plays_availble) {
+    public Member(String first_name, String last_name, java.sql.Date activation_date, Integer currency_available, Integer plays_available) {
+        super();
         this.first_name = first_name;
         this.last_name = last_name;
         this.activation_date = activation_date;
         this.currency_available = currency_available;
-        this.plays_available = plays_availble;
+        this.plays_available = plays_available;
     }
 
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -56,27 +62,22 @@ public class Member
         this.last_name = last_name;
     }
 
-    public String getActivation_date() {
+    public java.sql.Date getActivation_date() {
         return activation_date;
     }
 
-    public void setActivation_date(String activation_date) {
+    public void setActivation_date(java.sql.Date activation_date) {
         this.activation_date = activation_date;
     }
 
-    public int getPlays() {
+    public Integer getPlays() {
         return plays_available;
     }
 
-    public void setPlays(int plays_available) {this.plays_available = plays_available;}
+    public void setPlays(Integer plays_available) {this.plays_available = plays_available;}
 
-    public int getCurrency() {
-        return currency_available;
-    }
+    public Integer getCurrency() {return currency_available;}
 
-    public void setCurrency(int currency_available) {
-        this.currency_available = currency_available;
-    }
-
+    public void setCurrency(Integer currency_available) {this.currency_available = currency_available;}
 
 }
