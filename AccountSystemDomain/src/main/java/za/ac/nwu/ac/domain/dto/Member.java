@@ -1,11 +1,16 @@
 package za.ac.nwu.ac.domain.dto;
 
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+
 import javax.persistence.*;
 import java.util.Date;
 
 
 @Entity
 @Table(name = "MEMBER_")
+@DynamicInsert(true)
+@DynamicUpdate(true)
 public class Member
 {
     @Id
