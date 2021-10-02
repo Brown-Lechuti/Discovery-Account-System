@@ -26,7 +26,7 @@ public class ViewMiles
     @GetMapping("/MEMBER_/{id}")
     public ResponseEntity<Member> viewBalance(@PathVariable(value = "id") Long MEMBER_ID) throws ResourceNotFoundException
     {
-        Member member = repo.findById(Math.toIntExact(MEMBER_ID)).orElseThrow(() -> new ResourceNotFoundException("Member of this ID was not found:: " + MEMBER_ID));
+        Member member = repo.findById(MEMBER_ID).orElseThrow(() -> new ResourceNotFoundException("Member of this ID was not found:: " + MEMBER_ID));
         return ResponseEntity.ok().body(member);
     }
 }

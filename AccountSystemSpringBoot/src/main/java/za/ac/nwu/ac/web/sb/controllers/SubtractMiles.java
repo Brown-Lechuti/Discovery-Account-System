@@ -18,7 +18,7 @@ public class SubtractMiles {
 
     @PutMapping("MEMBER_/{id}/{currency_available}")
     public ResponseEntity<Member> subMiles(@PathVariable(value = "id") Long MEMBER_ID, @PathVariable(value = "currency_available") Integer currency_available) throws ResourceNotFoundException {
-        Member member = repo.findById(Math.toIntExact(MEMBER_ID)).orElseThrow(() -> new ResourceNotFoundException("Member not found for this id :: " + MEMBER_ID));
+        Member member = repo.findById(MEMBER_ID).orElseThrow(() -> new ResourceNotFoundException("Member not found for this id :: " + MEMBER_ID));
         member.setCurrency(member.getCurrency() - currency_available);
         final Member updatedEmployee = repo.save(member);
         return ResponseEntity.ok(updatedEmployee);

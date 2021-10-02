@@ -14,9 +14,10 @@ import java.util.Date;
 public class Member
 {
     @Id
-    @Column(name = "MEMBER_ID")
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @SequenceGenerator(name = "my_seq", sequenceName = "UNIUE_MEMBER_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="my_seq")
+    @Column(name="MEMBER_ID")
+    private Long id;
 
     @Column(name="first_name")
     private String first_name;
@@ -29,10 +30,9 @@ public class Member
     @Column(name="plays_available")
     private Integer plays_available = 0;
 
-
     //default constructor
     public Member() { super();}
-    
+
     //parametized constructor
     public Member(String first_name, String last_name, java.sql.Date activation_date, Integer currency_available, Integer plays_available) {
         super();
@@ -47,7 +47,7 @@ public class Member
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -18,7 +18,7 @@ public class DeleteMemberAccount {
     @DeleteMapping("/MEMBER_/{id}")
     public Map< String, Boolean > deleteMember(@PathVariable(value = "id") Long MEMBER_ID) throws ResourceNotFoundException
     {
-        Member member = repo.findById(Math.toIntExact(MEMBER_ID)).orElseThrow(() -> new ResourceNotFoundException("Member not found for this id :: " + MEMBER_ID));
+        Member member = repo.findById(MEMBER_ID).orElseThrow(() -> new ResourceNotFoundException("Member not found for this id :: " + MEMBER_ID));
         repo.delete(member);
         Map < String, Boolean > response = new HashMap< >();
         response.put("deleted", Boolean.TRUE);
