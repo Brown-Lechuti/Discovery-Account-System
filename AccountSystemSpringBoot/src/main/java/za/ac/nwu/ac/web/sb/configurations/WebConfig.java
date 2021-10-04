@@ -14,8 +14,7 @@ import za.ac.nwu.ac.repo.dto.Member_Repo;
 @EnableAutoConfiguration
 @EnableJpaRepositories(basePackageClasses={Member_Repo.class})
 @EntityScan(basePackageClasses= Member.class)
-@ComponentScan(basePackages = {"za.ac.nwu.ac.web.sb.controllers","za.ac.nwu.ac.domain.dto",
-       "za.ac.nwu.ac.repo.dto", "za.ac.nwu.ac.web.sb.exceptions"})
+@ComponentScan(basePackages = {"za.ac.nwu.ac.web.sb.controllers","za.ac.nwu.ac.domain.dto","za.ac.nwu.ac.repo.dto", "za.ac.nwu.ac.web.sb.exceptions"})
 public class WebConfig
 {
 

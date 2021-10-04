@@ -1,21 +1,26 @@
 package za.ac.nwu.ac.web.sb.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import za.ac.nwu.ac.domain.dto.Member;
-import za.ac.nwu.ac.repo.dto.Member_Repo;
+import za.ac.nwu.ac.web.sb.services.CreateMemberService;
 
-import javax.validation.Valid;
+import java.net.URI;
 
 @RestController
+@RequestMapping("/MEMBER_")
 public class CreateMemberAccount {
     @Autowired
-    Member_Repo repo;
-    @PostMapping("/MEMBER_")
-    public Member createMemberAccount(@Valid @RequestBody Member member)
-    {
-        return repo.save(member);
+    CreateMemberService service;
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public ResponseEntity<Member> createNewMember_whenPostMember(@RequestBody Member member) {
+        Member createdMember = service.createNewMember(member);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdMember.getId()).toUri();
+        return ResponseEntity.created(uri).body(createdMember);
     }
 }
+

@@ -17,7 +17,6 @@
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
           <maven.compiler.target>16</maven.compiler.target>
-
           <io.springfox-swagger.version>3.0.0</io.springfox-swagger.version>
     </properties>
     <modules>
@@ -47,7 +46,6 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${io.springfox-swagger.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.oracle</groupId>
                 <artifactId>ojdbc8</artifactId>
@@ -56,6 +54,11 @@
 
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <!--UNIT TESTING DEPENDENCIES-->
+        <!-- Junit 5 -->
+
+    </dependencies>
 
 
 </project>
