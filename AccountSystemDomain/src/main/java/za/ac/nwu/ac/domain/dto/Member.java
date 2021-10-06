@@ -4,8 +4,8 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
-import java.util.Date;
-
+//import java.util.Date;
+import java.sql.Date;
 
 @Entity
 @Table(name = "MEMBER_")
@@ -71,8 +71,10 @@ public class Member
         return activation_date;
     }
 
-    public void setActivation_date(java.sql.Date activation_date) {
-        this.activation_date = activation_date;
+    public void setActivation_date(String activation_date)
+    {
+        Date date=Date.valueOf(activation_date);
+        this.activation_date =  date;
     }
 
     public Integer getPlays() {
