@@ -1,5 +1,4 @@
-za\ac\nwu\ac\web\sb\controllers\ListMembers.class
-za\ac\nwu\ac\web\sb\controllers\DeleteMemberAccount.class
+za\ac\nwu\ac\web\sb\services\DetailMemberService.class
 za\ac\nwu\ac\web\sb\configurations\SwaggerConfig.class
 za\ac\nwu\ac\web\sb\controllers\CreateMemberAccount.class
 za\ac\nwu\ac\web\sb\controllers\ViewMiles.class
@@ -9,4 +8,7 @@ za\ac\nwu\ac\web\sb\exceptions\GlobalExceptionHandler.class
 za\ac\nwu\ac\web\sb\exceptions\ErrorDetails.class
 za\ac\nwu\ac\web\sb\RestServiceApplication.class
 za\ac\nwu\ac\web\sb\configurations\WebConfig.class
+za\ac\nwu\ac\web\sb\services\CreateMemberService.class
 za\ac\nwu\ac\web\sb\controllers\SubtractMiles.class
+za\ac\nwu\ac\web\sb\services\UpdateMemberAdd.class
+za\ac\nwu\ac\web\sb\services\UpdateMemberService.class
