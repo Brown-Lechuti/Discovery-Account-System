@@ -1,5 +1,4 @@
+ViewMilesTest.class
 za\ac\nwu\ac\web\sb\endpoints\util\JsonUtil.class
-za\ac\nwu\ac\web\sb\endpoints\unit\service\DetailMemberServiceTest.class
-za\ac\nwu\ac\web\sb\api\RestServiceApplicationTest.class
-za\ac\nwu\ac\web\sb\endpoints\unit\service\CreateMemberServiceTest.class
-za\ac\nwu\ac\web\sb\endpoints\unit\controller\ViewMilesTest.class
+CreateMemberServiceTest.class
+DetailMemberServiceTest.class

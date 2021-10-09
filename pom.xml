@@ -19,6 +19,7 @@
           <maven.compiler.target>16</maven.compiler.target>
           <io.springfox-swagger.version>3.0.0</io.springfox-swagger.version>
           <haltOnfailure>false</haltOnfailure>
+          <jacoco-maven-plugin.version>0.8.3</jacoco-maven-plugin.version>
     </properties>
     <modules>
         <module>AccountSystemDomain</module>
@@ -51,11 +52,6 @@
                 <groupId>com.oracle</groupId>
                 <artifactId>ojdbc8</artifactId>
                 <version>12.2.0.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -96,11 +92,12 @@
 
     </dependencies>
 <build>
-    <pluginManagement>
+   <!-- <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-maven-plugin.version}</version>
                 <configuration>
                     <haltOnFailure>${haltOnfailure}</haltOnFailure>
                     <rules>
@@ -120,19 +117,19 @@
                             </excludes>
                             <limits>
                                 <limit>
-                                    <counter>BRANCH</counter>
+                                    <counter>INSTRUCTION</counter>
                                     <value>COVEREDRATIO</value>
                                     <minimum>0.8</minimum>
                                 </limit>
                                 <limit>
-                                    <counter>INSTRUCTION</counter>
+                                    <counter>LINE</counter>
                                     <value>COVEREDRATIO</value>
                                     <minimum>0.1</minimum>
                                 </limit>
                                 <limit>
-                                    <counter>LINE</counter>
+                                    <counter>BRANCH</counter>
                                     <value>COVEREDRATIO</value>
-                                    <minimum>0</minimum>
+                                    <minimum>0.1</minimum>
                                 </limit>
                             </limits>
                         </rule>
@@ -162,7 +159,7 @@
                 </executions>
             </plugin>
         </plugins>
-    </pluginManagement>
+    </pluginManagement>-->
 </build>
 
 </project>
