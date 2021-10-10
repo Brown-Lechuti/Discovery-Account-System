@@ -69,6 +69,16 @@
             <version>2.0.0.Final</version>
         </dependency>
         <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.7</version>
@@ -85,20 +95,23 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
+                <version>0.8.7</version><!--try reomve this-->
                 <configuration>
                     <haltOnFailure>false</haltOnFailure>
                     <rules>
                         <rule>
                             <element>CLASS</element>
+                            <includes>
+                                <include>za.ac.nwu.ac.web.sb.controllers.ViewMiles</include>                       <exclude>za.ac.nwu.ac.web.sb.services.UpdateMemberService</exclude>
+                                <include>za.ac.nwu.ac.web.sb.services.CreateMemberService</include>
+                                <include>za.ac.nwu.ac.web.sb.services.DetailMemberService</include>
+                            </includes>
                             <excludes>
                                 <exclude>za.ac.nwu.ac.web.sb.controllers.SubtractMiles</exclude>
                                 <exclude>za.ac.nwu.ac.web.sb.controllers.AddMiles</exclude>
-                                <exclude>za.ac.nwu.ac.web.sb.controllers.CreateMemberAccount</exclude>
-                                <exclude>za.ac.nwu.ac.web.sb.services.UpdateMemberService</exclude>
                                 <exclude>za.ac.nwu.ac.web.sb.services.UpdateMemberAdd</exclude>
-                                <exclude>za.ac.nwu.ac.web.sb.exceptions*</exclude>
                                 <exclude>za.ac.nwu.ac.web.sb.configurations*</exclude>
+                                <exclude>za.ac.nwu.ac.web.sb.exceptions*</exclude>
                             </excludes>
                             <limits>
                                 <limit>

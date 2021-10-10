@@ -1,0 +1,15 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Discovery Account System,za.ac.nwu.ac.web.sb.configurations,WebConfig,3,0,0,0,1,0,1,0,1,0
+Discovery Account System,za.ac.nwu.ac.web.sb.configurations,SwaggerConfig,40,0,0,0,9,0,3,0,3,0
+Discovery Account System,za.ac.nwu.ac.web.sb,RestServiceApplication,8,0,0,0,3,0,2,0,2,0
+Discovery Account System,za.ac.nwu.ac.web.sb.exceptions,ErrorDetails,21,0,0,0,8,0,4,0,4,0
+Discovery Account System,za.ac.nwu.ac.web.sb.exceptions,ResourceNotFoundException,4,0,0,0,2,0,1,0,1,0
+Discovery Account System,za.ac.nwu.ac.web.sb.exceptions,GlobalExceptionHandler,39,0,0,0,5,0,3,0,3,0
+Discovery Account System,za.ac.nwu.ac.web.sb.controllers,CreateMemberAccount,27,0,0,0,4,0,2,0,2,0
+Discovery Account System,za.ac.nwu.ac.web.sb.controllers,AddMiles,9,0,0,0,2,0,2,0,2,0
+Discovery Account System,za.ac.nwu.ac.web.sb.controllers,ViewMiles,10,0,0,0,2,0,2,0,2,0
+Discovery Account System,za.ac.nwu.ac.web.sb.controllers,SubtractMiles,9,0,0,0,2,0,2,0,2,0
+Discovery Account System,za.ac.nwu.ac.web.sb.services,DetailMemberService,18,0,0,0,2,0,3,0,3,0
+Discovery Account System,za.ac.nwu.ac.web.sb.services,CreateMemberService,9,0,0,0,2,0,2,0,2,0
+Discovery Account System,za.ac.nwu.ac.web.sb.services,UpdateMemberService,35,0,0,0,5,0,3,0,3,0
+Discovery Account System,za.ac.nwu.ac.web.sb.services,UpdateMemberAdd,35,0,0,0,5,0,3,0,3,0
