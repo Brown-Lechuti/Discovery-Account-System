@@ -56,7 +56,7 @@
             <artifactId>ojdbc8</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!--for connecting app to oracle db-->
+        <!---->
         <dependency>
             <groupId>za.ac.nwu.ac</groupId>
             <artifactId>AccountSystemRepo</artifactId>
@@ -86,28 +86,31 @@
     </dependencies>
 
     <build>
+        <!--Build WAR file-->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.5.4</version>
             </plugin>
+            <!--Jacoco-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version><!--try reomve this-->
+                <version>0.8.7</version><!---->
                 <configuration>
                     <haltOnFailure>false</haltOnFailure>
                     <rules>
                         <rule>
                             <element>CLASS</element>
                             <includes>
-                                <include>za.ac.nwu.ac.web.sb.controllers.ViewMiles</include>                       <exclude>za.ac.nwu.ac.web.sb.services.UpdateMemberService</exclude>
+                                <include>za.ac.nwu.ac.web.sb.controllers.ViewMiles</include>
                                 <include>za.ac.nwu.ac.web.sb.services.CreateMemberService</include>
                                 <include>za.ac.nwu.ac.web.sb.services.DetailMemberService</include>
                             </includes>
                             <excludes>
                                 <exclude>za.ac.nwu.ac.web.sb.controllers.SubtractMiles</exclude>
+                                <exclude>za.ac.nwu.ac.web.sb.services.UpdateMemberService</exclude>
                                 <exclude>za.ac.nwu.ac.web.sb.controllers.AddMiles</exclude>
                                 <exclude>za.ac.nwu.ac.web.sb.services.UpdateMemberAdd</exclude>
                                 <exclude>za.ac.nwu.ac.web.sb.configurations*</exclude>
